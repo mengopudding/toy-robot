@@ -16,25 +16,25 @@ app.readParseFile = (fileName, cb) => {
             return
         }
 
-        inputParser.parseArguements(fileData, (err, instructionsList) => {
+        inputParser.parseArguements(fileData, (err, commandsList) => {
             if (err) {
                 cb(err);
                 return
             }
-
-            cb(null, instructionsList);
+            console.log(commandsList);
+            cb(null, commandsList);
         })
     });
 };
 
 app.runRobotApp = (fileName, cb) => {
-    app.readParseFile(fileName, (err, instructionsList) => {
+    app.readParseFile(fileName, (err, commandsList) => {
         if (err) {
             cb(err);
             return
         }
 
-        // toyRobot = toyRobot.executeInstructions(instructionsList);
+        // toyRobot = toyRobot.executecommands(commandsList);
         cb(null);
     });
 };
