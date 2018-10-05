@@ -10,7 +10,7 @@ const app = {};
 
 app.readParseFile = (fileName, cb) => {
     console.log(fileReader)
-    fileReader.readInputFile(fileName, function (err, fileData) {
+    fileReader.readInputFile(fileName, (err, fileData) => {
         if (err) {
             cb(err);
             return
