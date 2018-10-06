@@ -21,7 +21,7 @@ app.readParseFile = (fileName, cb) => {
                 cb(err);
                 return
             }
-            console.log(commandsList);
+
             cb(null, commandsList);
         })
     });
