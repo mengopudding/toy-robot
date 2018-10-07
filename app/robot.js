@@ -10,7 +10,7 @@ app.runRobotApp(fileName, (err, toyRobot) => {
     console.log(toyRobot);
     if (!toyRobot.hasBeenPlaced) {
         console.log('Robot placement is unsuccessful');
-    }
 
-    console.log("Robot has obeyed you");
+    }
+    console.log("THE END :)");
 })
