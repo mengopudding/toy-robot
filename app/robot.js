@@ -7,7 +7,7 @@ app.runRobotApp(fileName, (err, toyRobot) => {
         console.log('ERROR:' + ' ' + (err.message));
         return
     }
-
+    console.log(toyRobot);
     if (!toyRobot.hasBeenPlaced) {
         console.log('Robot placement is unsuccessful');
     }

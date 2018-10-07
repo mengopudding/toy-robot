@@ -2,9 +2,11 @@ const ToyRobot = require('./lib/ToyRobot');
 const FileReader = require('./lib/FileReader');
 const InputParser = require('./lib/InputParser');
 
-const toyRobot = new ToyRobot();
+let toyRobot = new ToyRobot();
 const fileReader = new FileReader();
 const inputParser = new InputParser();
+
+console.log(ToyRobot);
 
 const app = {};
 
@@ -35,6 +37,8 @@ app.runRobotApp = (fileName, cb) => {
         }
 
         toyRobot = toyRobot.executeCommands(commandsList);
+        console.log(toyRobot);
+
         cb(null);
     });
 };
