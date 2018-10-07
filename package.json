@@ -1,0 +1,30 @@
+{
+  "name": "toy-robot",
+  "version": "1.0.0",
+  "description": "Toy Robot Simulator ===================",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "dependencies": {
+    "chai": "^4.2.0"
+  },
+  "devDependencies": {
+    "mocha": "^5.2.0"
+  },
+  "scripts": {
+    "test": "mocha",
+    "start": "node ./app/robot.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mengolicious/toy-robot.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mengolicious/toy-robot/issues"
+  },
+  "homepage": "https://github.com/mengolicious/toy-robot#readme"
+}
