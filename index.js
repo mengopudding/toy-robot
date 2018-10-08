@@ -33,6 +33,7 @@ app.runRobotApp = (fileName, cb) => {
             cb(err);
             return
         }
+        // console.log(commandsList + "0000");
         toyRobot.executeCommands(commandsList);
         cb(null, toyRobot);
         console.log(toyRobot);
