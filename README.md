@@ -11,7 +11,13 @@ npm install
 Starting the application. 
 
 ```
-npm start PATH/YOURFILENAME.txt
+npm start YOURFILENAME.txt
+```
+
+There are some set of commands already made in test/testData dir
+
+```
+npm start test/testData/FILENAME.txt
 ```
 
 
