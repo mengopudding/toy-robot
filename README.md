@@ -3,18 +3,18 @@
 
 ## Installation and Usage
 
-Install it locally onto your machine.
+Clone it and Install it locally onto your machine.
 ```
 npm install
 ```
 
-Starting the application. 
+Starting the application, create your own text file with your desired commands and use ```npm start``` to run the application.
 
 ```
 npm start YOURFILENAME.txt
 ```
 
-There are some set of commands already made in test/testData dir
+There are some set of commands already made in test/testData dir.
 
 ```
 npm start test/testData/FILENAME.txt
@@ -30,7 +30,7 @@ Your commands must not make the Toy Robot fall off the table.
 
 Toy Robot will not ingest any commands that will make it fall off the table.
 
-Toy Robot must be placed before taking any further commands.
+Toy Robot must be placed before it can take any further commands.
 
 ### List of commands Toy Robot can ingest:
 
@@ -83,6 +83,8 @@ Expected output
 
 Tests
 ------------------------
+
+Run the full test suite.
 
 ```
 npm test

@@ -6,7 +6,6 @@ let toyRobot = new ToyRobot();
 const fileReader = new FileReader();
 const inputParser = new InputParser();
 
-
 const app = {};
 
 app.readParseFile = (fileName, cb) => {
@@ -21,7 +20,6 @@ app.readParseFile = (fileName, cb) => {
                 cb(err);
                 return
             }
-
             cb(null, commandsList);
         })
     });
@@ -33,10 +31,8 @@ app.runRobotApp = (fileName, cb) => {
             cb(err);
             return
         }
-        // console.log(commandsList + "0000");
         toyRobot.executeCommands(commandsList);
         cb(null, toyRobot);
-        // console.log(toyRobot);
     });
 };
 
